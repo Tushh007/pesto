@@ -7,7 +7,7 @@ For example, sumFibs(10) should return 10 because all odd Fibonacci numbers less
 */
 
 const sumFibs = (number) => {
-  // Initializing previous two numbers
+  // Initializing startingtwo numbers of the Fibonacci sequence
   let num1 = 1;
   let num2 = 1;
 
@@ -16,10 +16,10 @@ const sumFibs = (number) => {
 
   for (let i = 3; i <= number; i++) {
 
-    // Calculating fibnocacci number
+    // Calculating fibnocacci number at ith number
     const currentNum = num1 + num2;
 
-    // storing previous two numbers
+    // Storing previous two numbers from the ith number
     num1 = num2;
     num2 = currentNum;
 
